@@ -287,3 +287,40 @@
   new PureCounter();
 
 })()
+
+
+/**
+ * Mobile nav toggle
+ */
+function toggleMobileNav(e) {
+  document.querySelector('#navbar').classList.toggle('navbar-mobile')
+  document.querySelector('#nav-toggle').classList.toggle('bi-list')
+  document.querySelector('#nav-toggle').classList.toggle('bi-x')
+
+    /**
+   * Scrool with ofset on links with a class name .scrollto
+   */
+  const scrolltos = document.querySelectorAll(".scrollto");
+    scrolltos.forEach(scrollto => {
+        scrollto.addEventListener('click', function(e) {
+        if (document.querySelector(this.hash)) {
+
+          let navbar = document.querySelector('#navbar')
+          if (navbar.classList.contains('navbar-mobile')) {
+            navbar.classList.remove('navbar-mobile')
+            let navbarToggle = document.querySelector('.mobile-nav-toggle')
+            navbarToggle.classList.toggle('bi-list')
+            navbarToggle.classList.toggle('bi-x')
+          }
+        }
+      }, true)
+    });
+  }
+  /**
+ * Mobile nav dropdowns activate
+ */
+  function toggleDropDown() {
+  if (document.querySelector('#navbar').classList.contains('navbar-mobile')) {
+    document.querySelector('#dropdown_items').classList.toggle('dropdown-active');
+  }
+};

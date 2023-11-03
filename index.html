@@ -29,10 +29,7 @@
 
   <!-- =======================================================
   * Template Name: Dm Gebäudereinigung
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/Dm Gebäudereinigung-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+  * Updated: Nov 3 2023 with Bootstrap v5.3.2
   ======================================================== -->
 </head>
 <style>
@@ -733,10 +730,6 @@
           &copy; Copyright <strong><span>Dm Gebäudereinigung</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Dm Gebäudereinigung-bootstrap-business-template/ -->
           Designed by <a href="https://bootstrapmade.com/">Dev Kim</a>
         </div>
       </div>
@@ -1343,10 +1336,6 @@
         &copy; Urheberrechte <strong><span>Dm Gebäudereinigung</span></strong>. Alle Rechte vorbehalten
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Dm Gebäudereinigung-bootstrap-business-template/ -->
         Entworfen von <a href="https://bootstrapmade.com/">Dev Kim</a>
       </div>
     </div>
@@ -1354,46 +1343,6 @@
     `;
       }
     }
-  </script>
-  <script>
-      /**
-   * Mobile nav toggle
-   */
-   function toggleMobileNav(e) {
-    document.querySelector('#navbar').classList.toggle('navbar-mobile')
-    document.querySelector('#nav-toggle').classList.toggle('bi-list')
-    document.querySelector('#nav-toggle').classList.toggle('bi-x')
-
-     /**
-     * Scrool with ofset on links with a class name .scrollto
-     */
-    const scrolltos = document.querySelectorAll(".scrollto");
-      scrolltos.forEach(scrollto => {
-          scrollto.addEventListener('click', function(e) {
-          if (document.querySelector(this.hash)) {
-
-            let navbar = document.querySelector('#navbar')
-            if (navbar.classList.contains('navbar-mobile')) {
-              navbar.classList.remove('navbar-mobile')
-              let navbarToggle = document.querySelector('.mobile-nav-toggle')
-              navbarToggle.classList.toggle('bi-list')
-              navbarToggle.classList.toggle('bi-x')
-            }
-          }
-        }, true)
-      });
-    }
-    /**
-   * Mobile nav dropdowns activate
-   */
-   function toggleDropDown() {
-    if (document.querySelector('#navbar').classList.contains('navbar-mobile')) {
-      document.querySelector('#dropdown_items').classList.toggle('dropdown-active');
-    }
-  };
-
- 
-
   </script>
 </body>
 </html>
