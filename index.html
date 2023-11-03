@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>DM Gebäudereinigung</title>
+  <title>Dm Gebäudereinigung</title>
   <meta content="Home and Office Cleaning Services" name="description">
   <meta content="Home and Office Cleaning Services" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logo2.png" rel="icon">
-  <link href="assets/img/logo2.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -28,9 +28,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: DM Gebäudereinigung
+  * Template Name: Dm Gebäudereinigung
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/DM Gebäudereinigung-bootstrap-business-template/
+  * Template URL: https://bootstrapmade.com/Dm Gebäudereinigung-bootstrap-business-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -60,26 +60,29 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
+  .hero-logo{
+    width: 100%;
+  }
 </style>
 <body>
   <div style="position:fixed; top: 0px; right: 20px; z-index:1000">
     <select id="languageSelector" class="form-select" aria-label="Default select language" onchange="changeLanguage()">
-      <option value="en" selected><img src="assets/img/Flags/united-kingdom-flag-icon.svg">English</option>
-      <option value="gm"><img src="assets/img/Flags/germany-flag-icon.svg">German</option>
+      <option value="en" selected>🇬🇧 English</option>
+      <option value="gm">🇩🇪 German</option>
     </select>
   </div>
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
+      <div class="contact-info d-flex flex-wrap gap-2 align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:dmgebaudereinigung1@gmail.com">dmgebaudereinigung1@gmail.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+1 5589 55488 55">+1 5589 55488 55</a></i>
+        <i class="bi bi-phone d-flex align-items-center"><a href="tel:+1 5589 55488 55">+1 5589 55488 55</a></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
   </section>
@@ -146,16 +149,16 @@
       <div class="container d-flex align-items-center justify-content-between">
   
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html" class="logo"><img width="150" height="200" src="assets/img/logo2.png" alt="logo image"></a>
-        <h1 class="logo ml-0"><a href="index.html">DM Gebäudereinigung<span>.</span></a></h1>
+        <!-- <a href="#hero" class="logo"><img width="100"src="assets/img/logo.png" alt="logo image"></a>-->
+        <h1 class="logo"><a href="#hero">Dm Gebäudereinigung<span>.</span></a></h1>
   
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
             <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
-            <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>services</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
+            <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>services</span> <i class="bi bi-chevron-down" onclick="toggleDropDown()"></i></a>
+              <ul id="dropdown_items">
                 <li><a href="#">Residential Cleaning</a></li>
                 <li><a href="#">Commercial Cleaning</a></li>
                 <li><a href="#">Specialized Services</a></li>
@@ -163,8 +166,9 @@
             </li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+          <i class="bi bi-list mobile-nav-toggle" id="nav-toggle" onclick="toggleMobileNav()"></i>
+        </nav>
+        <!-- .navbar -->
   
       </div>
     </header><!-- End Header -->
@@ -172,14 +176,21 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
       <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h1>Welcome to <span>DM Gebäudereinigung</span></h1>
-        <h2>When Cleanliness Counts, Count on Us.</h2>
-        <div class="d-flex">
-          <a href="#about" class="btn-get-started scrollto">Get Free Quote</a>
-          <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Welcome to <span>Dm Gebäudereinigung</span></h1>
+            <h2>When Cleanliness Counts, Count on Us.</h2>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started scrollto">Get Free Quote</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div href="#hero"><img class="hero-logo" src="assets/img/logo.png" alt="logo image"></div>
+          </div>
         </div>
       </div>
-    </section><!-- End Hero -->
+    </section>
+    <!-- End Hero -->
   
     <main id="main">
   
@@ -242,7 +253,7 @@
           <div class="section-title">
             <h2>About</h2>
             <h3>Find Out More <span>About Us</span></h3>
-            <p>Welcome to DM Gebäudereinigung, where cleanliness meets perfection. 
+            <p>Welcome to Dm Gebäudereinigung, where cleanliness meets perfection. 
               We are more than just a cleaning service; we are your dedicated partner in creating spotless, 
               welcoming spaces that enhance your quality of life.</p>
   
@@ -309,7 +320,7 @@
             </div>
             <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center section-title" data-aos="fade-up" data-aos-delay="100">
               <p>
-                At DM Gebäudereinigung, we understand the importance of a clean and healthy environment. 
+                At Dm Gebäudereinigung, we understand the importance of a clean and healthy environment. 
                 Our mission is to deliver cleaning excellence, every time, 
                 ensuring that you can live and work in surroundings that sparkle with freshness. 
                 With years of experience in the industry, 
@@ -372,7 +383,7 @@
           <div class="section-title">
             <h2>Services</h2>
             <h3>Check our <span>Services</span></h3>
-            <p>At DM Gebäudereinigung, 
+            <p>At Dm Gebäudereinigung, 
               we take pride in offering a comprehensive range of cleaning services that transform spaces into immaculate, 
               inviting environments. Our commitment to excellence, personalized approach, 
               and dedication to your well-being set us apart. 
@@ -671,7 +682,7 @@
           <div class="row">
   
             <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>DM Gebäudereinigung<span>.</span></h3>
+              <h3>Dm Gebäudereinigung<span>.</span></h3>
               <p>
                 Germany <br>
                 Hanhover<br>
@@ -719,13 +730,13 @@
   
       <div class="container py-4">
         <div class="copyright">
-          &copy; Copyright <strong><span>DM Gebäudereinigung</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Dm Gebäudereinigung</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/DM Gebäudereinigung-bootstrap-business-template/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Dm Gebäudereinigung-bootstrap-business-template/ -->
           Designed by <a href="https://bootstrapmade.com/">Dev Kim</a>
         </div>
       </div>
@@ -745,16 +756,16 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img width="150" height="200" src="assets/img/logo2.png" alt="logo image"></a>
-      <h1 class="logo ml-0"><a href="index.html">DM Gebäudereinigung<span>.</span></a></h1>
-
+      <!-- <a href="#hero" class="logo"><img width="150" height="200" src="assets/img/logo.png" alt="logo image"></a>-->
+      <h1 class="logo ml-0"><a href="#hero">Dm Gebäudereinigung<span>.</span></a></h1>
+ 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Heim</a></li>
           <li><a class="nav-link scrollto" href="#about">Über uns</a></li>
           <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
-          <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Dienstleistungen</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+          <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Dienstleistungen</span> <i class="bi bi-chevron-down" onclick="toggleDropDown()"></i></a>
+            <ul id="dropdown_items">
               <li><a href="#">Reinigung von Wohngebäuden</a></li>
               <li><a href="#">Gewerbliche Reinigung</a></li>
               <li><a href="#">Spezialisierte Dienstleistungen</a></li>
@@ -762,23 +773,32 @@
           </li>
           <li><a class="nav-link scrollto" href="#contact">Kontaktiere uns</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle" id="nav-toggle"  onclick="toggleMobileNav()"></i>
       </nav><!-- .navbar -->
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Willkommen bei <span>DM Gebäudereinigung</span></h1>
-      <h2>Wenn Sauberkeit zählt, zählen Sie auf uns.</h2>
-      <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Erhalten Sie ein kostenloses Angebot</a>
-        <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Willkommen bei <span>Dm Gebäudereinigung</span></h1>
+            <h2>Wenn Sauberkeit zählt, zählen Sie auf uns.</h2>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started scrollto">Erhalten Sie ein kostenloses Angebot</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div href="#hero"><img class="hero-logo" src="assets/img/logo.png" alt="logo image"></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -841,7 +861,7 @@
         <div class="section-title">
           <h2>Über uns</h2>
           <h3>Find Out More <span>Über uns</span></h3>
-          <p>Willkommen bei DM Gebäudereinigung, wo Sauberkeit auf Perfektion trifft.
+          <p>Willkommen bei Dm Gebäudereinigung, wo Sauberkeit auf Perfektion trifft.
             Wir sind mehr als nur ein Reinigungsdienst; Wir sind Ihr engagierter Partner bei der Schaffung makelloser,
             Einladende Räume, die Ihre Lebensqualität verbessern.</p>
 
@@ -908,7 +928,7 @@
           </div>
           <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center section-title" data-aos="fade-up" data-aos-delay="100">
             <p>
-              Bei DM Gebäudereinigung sind wir uns der Bedeutung einer sauberen und gesunden Umwelt bewusst.
+              Bei Dm Gebäudereinigung sind wir uns der Bedeutung einer sauberen und gesunden Umwelt bewusst.
                Unsere Mission ist es, jederzeit hervorragende Reinigungsqualität zu liefern.
                Wir stellen sicher, dass Sie in einer Umgebung leben und arbeiten können, die vor Frische strahlt.
                Mit jahrelanger Erfahrung in der Branche,
@@ -971,7 +991,7 @@
         <div class="section-title">
           <h2>Dienstleistungen</h2>
           <h3>Check our <span>Dienstleistungen</span></h3>
-          <p>Bei DM Gebäudereinigung
+          <p>Bei Dm Gebäudereinigung
             Wir sind stolz darauf, ein umfassendes Spektrum an Reinigungsdiensten anzubieten, die Räume in makellose, saubere Räume verwandeln.
             einladende Umgebungen. Unser Engagement für Exzellenz, personalisierter Ansatz,
             und unser Engagement für Ihr Wohlbefinden zeichnen uns aus.
@@ -1272,7 +1292,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>DM Gebäudereinigung<span>.</span></h3>
+            <h3>Dm Gebäudereinigung<span>.</span></h3>
             <p>
               Germany <br>
               Hanhover<br>
@@ -1320,13 +1340,13 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Urheberrechte <strong><span>DM Gebäudereinigung</span></strong>. Alle Rechte vorbehalten
+        &copy; Urheberrechte <strong><span>Dm Gebäudereinigung</span></strong>. Alle Rechte vorbehalten
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/DM Gebäudereinigung-bootstrap-business-template/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Dm Gebäudereinigung-bootstrap-business-template/ -->
         Entworfen von <a href="https://bootstrapmade.com/">Dev Kim</a>
       </div>
     </div>
@@ -1334,6 +1354,46 @@
     `;
       }
     }
+  </script>
+  <script>
+      /**
+   * Mobile nav toggle
+   */
+   function toggleMobileNav(e) {
+    document.querySelector('#navbar').classList.toggle('navbar-mobile')
+    document.querySelector('#nav-toggle').classList.toggle('bi-list')
+    document.querySelector('#nav-toggle').classList.toggle('bi-x')
+
+     /**
+     * Scrool with ofset on links with a class name .scrollto
+     */
+    const scrolltos = document.querySelectorAll(".scrollto");
+      scrolltos.forEach(scrollto => {
+          scrollto.addEventListener('click', function(e) {
+          if (document.querySelector(this.hash)) {
+
+            let navbar = document.querySelector('#navbar')
+            if (navbar.classList.contains('navbar-mobile')) {
+              navbar.classList.remove('navbar-mobile')
+              let navbarToggle = document.querySelector('.mobile-nav-toggle')
+              navbarToggle.classList.toggle('bi-list')
+              navbarToggle.classList.toggle('bi-x')
+            }
+          }
+        }, true)
+      });
+    }
+    /**
+   * Mobile nav dropdowns activate
+   */
+   function toggleDropDown() {
+    if (document.querySelector('#navbar').classList.contains('navbar-mobile')) {
+      document.querySelector('#dropdown_items').classList.toggle('dropdown-active');
+    }
+  };
+
+ 
+
   </script>
 </body>
 </html>
