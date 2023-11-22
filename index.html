@@ -60,21 +60,22 @@
   .hero-logo{
     width: 100%;
   }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1200px) {
   #topbar {
-    margin-top: 45px;
+    padding-top: 50px;
+    padding-bottom: 15px;
   }
 }
 </style>
 <body>
-  <div style="position:fixed; top: 0px; right: 20px; z-index:1000">
+  <div style="position:fixed; top: 0px; right: 20px; z-index:996">
     <select id="languageSelector" class="form-select" aria-label="Default select language" onchange="changeLanguage()">
       <option value="en" selected>🇬🇧 English</option>
       <option value="gm">🇩🇪 German</option>
     </select>
   </div>
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center" style="">
+  <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex flex-wrap gap-2 align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:dmgebaudereinigung1@gmail.com">dmgebaudereinigung1@gmail.com</a></i>
