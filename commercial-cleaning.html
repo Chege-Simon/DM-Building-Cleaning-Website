@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dm Gebäudereinigung</title>
+  <meta content="Home and Office Cleaning Services" name="description">
+  <meta content="Home and Office Cleaning Services" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Dm Gebäudereinigung
+  * Updated: Nov 3 2023 with Bootstrap v5.3.2
+  ======================================================== -->
+</head>
+<style>
+  .hero-logo{
+    width: 100%;
+  }
+</style>
+<body>
+  <div style="position:fixed; top: 0px; right: 20px; z-index:1000">
+    <select id="languageSelector" class="form-select" aria-label="Default select language" onchange="changeLanguage()">
+      <option value="en" selected>🇬🇧&emsp; English</option>
+      <option value="gm">🇩🇪&emsp; German</option>
+    </select>
+  </div>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex flex-wrap gap-2 align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:dmgebaudereinigung1@gmail.com">dmgebaudereinigung1@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center"><a href="tel:+1 5589 55488 55">+1 5589 55488 55</a></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="language">
+
+  </div>
+
+  
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // *This section is in English language
+    // *
+    // *
+    // ======================================================== -->
+      
+      document.querySelector('#languageSelector').value = 'en';
+      
+      
+      window.onload = changeLanguage;
+      function changeLanguage(){
+        let lang = document.querySelector('#languageSelector').value;
+        // console.log(lang);
+        // Hide elements that don't correspond to the user's preferred language
+        if (lang == 'en') {document.querySelector('#language').innerHTML=`
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="#hero" class="logo"><img width="100"src="assets/img/logo.png" alt="logo image"></a>-->
+      <h1 class="logo"><a href="#hero">Dm Gebäudereinigung<span>.</span></a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="./index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#about">About</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+          <li class="dropdown"><a class="nav-link scrollto active" href="./index.html#services"><span>services</span> <i class="bi bi-chevron-down" onclick="toggleDropDown()"></i></a>
+            <ul id="dropdown_items">
+              <li><a href="./residential-cleaning.html">Residential Cleaning</a></li>
+              <li><a href="./commercial-cleaning.html">Commercial Cleaning</a></li>
+              <li><a href="./specialized-services.html">Specialized Services</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="./index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle" id="nav-toggle" onclick="toggleMobileNav()"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+        <main id="main" data-aos="fade-up">
+
+<!-- ======= Breadcrumbs ======= -->
+<section class="breadcrumbs">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Commercial Cleaning</h2>
+      <ol>
+        <li><a href="./index.html">Home</a></li>
+        <li>Services</li>
+        <li>Commercial Cleaning</li>
+      </ol>
+    </div>
+
+  </div>
+</section><!-- End Breadcrumbs -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <div class="row">
+      <div class="col-md-8">
+        <h1><span>Commercial Cleaning</span></h1>
+        <h2>From regular maintenance to deep cleaning, we keep your home spotless and comfortable.</h2>
+        <div class="d-flex">
+          <a href="#" class="btn-get-started scrollto" data-bs-toggle="modal" data-bs-target="#quoteModel">Get Free Quote</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div href="#hero"><img class="hero-logo" src="assets/img/logo.png" alt="logo image"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+<section class="inner-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+          <h2 class="display-4 text-primary">SPEICIALIZED CLEANING FOR HIGH TRAFFIC AREAS. </h2>
+          <h3>ENSURE A POLISTHED AND PROFESIONAL MEETING ENVIRONMENT.</h3>
+          <p>
+            Elevate your workspace! Our expert team specializes in high-traffic area care, guaranteeing a pristine and hygienic environment for your team and clients.
+          </p>
+          <p>
+            We understand that high-traffic areas demand special attention. 
+            Our team is equipped to tackle heavy foot traffic zones, ensuring a clean and hygienic environment for both your employees and clients..
+          </p>
+      </div>
+      <div class="col-md-6">
+        <img src="./assets/img/showcase/showcaseimage1.jpg" alt="cleaning image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ======= Frequently Asked Questions Section ======= -->
+  <section id="faq" class="faq section-bg">
+    <div class="container">
+      <table class="table table-striped table-big table-responsive text-center rounded-3 overflow-hidden">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">RECEPTION AREA / WORKSPACE AND DESKS</th>
+            <th scope="col">RESTROOMS</th>
+            <th scope="col">HALLWAYS, COMMON AREAS, ELEVATORS AND STAIRWELLS</th>
+            <th scope="col">OUTDOOR SPACES (If applicable)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <td>
+              <ul style="list-style: none;">
+                <li>Clean and sanitize reception desk.</li>
+                <li>Wipe down and disinfect surface.s</li>
+                <li>Dust and clean seating areas.</li>
+                <li>Vacuum or clean carpets.</li>
+                <li>Ensure a welcoming and tidy entrance.</li>
+                <li>Empty trash bins.</li>
+                <li>Organize and declutter individual workspaces.</li>
+                <li>Clean and sanitize conference tables.</li>
+                <li>Ensure a polished and professional meeting environment</li>
+              </ul>
+            </td>
+            <td>
+              <ul style="list-style: none;">
+                <li>Clean and sanitize sinks and countertops.</li>
+                <li>Disinfect toilet bowls, seats, and handles.</li>
+                <li>Refill soap and paper towel dispensers.</li>
+                <li>Clean mirrors and glass surfaces.</li>
+                <li>Ensure a fresh and hygienic restroom environment.</li>
+              </ul>
+            </td>
+            <td>
+              <ul style="list-style: none;">
+                <li>Dust and wipe down surfaces.</li>
+                <li>Vacuum or clean flooring.</li>
+                <li>Clean windows and glass doors.</li>
+                <li>Remove any visible dirt or debris.</li>
+                <li>Maintain a clean and organized flow throughout common spaces.</li>
+                <li>Wipe down elevator buttons and handrails.</li>
+                <li>Clean and polish elevator interiors.</li>
+                <li>Vacuum or clean stairwell steps.</li>
+                <li>Ensure a safe and clean transit environment.</li>
+              </ul>
+            </td>
+            <td>
+              <ul style="list-style: none;">
+                <li>Sweep and clean exterior entryways.</li>
+                <li>Remove debris from outdoor areas.</li>
+                <li>Clean and organize outdoor seating, if present.</li>
+                <li>Maintain a clean and inviting exterior appearance.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+          
+    </div>
+</section>
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Dm Gebäudereinigung<span>.</span></h3>
+          <p>
+            Germany <br>
+            Hanhover<br>
+            Kassel <br>
+            <br>
+            <strong>Phone:</strong> <a href="tel:+1 5589 55488 55">+1 5589 55488 55</a><br>
+            <strong>Email:</strong>dmgebaudereinigung1@gmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a class="navlink scrollto" href="#hero">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a class="navlink scrollto" href="#about">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a class="navlink scrollto" href="#services">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a class="navlink scrollto" href="#">Terms of service</a></li>
+            <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="./residential-cleaning.html">Residential Cleaning</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="./commercial-cleaning.html">Commercial Cleaning</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="./specialized-services.html">Specialized Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Feel free to contact us on our Social Networks</p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Dm Gebäudereinigung</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">Dev Kim</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+                
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="quoteModel" tabindex="-1" aria-labelledby="quoteModelLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="quoteModelLabel">Get Free Quote</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="forms/quote.php" method="post" role="form" class="php-email-form">
+                          <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="firstName">
+                          </div>
+                          <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="lastName">
+                          </div>
+                          <div class="mb-3">
+                            <label for="lastName" class="form-label">Services</label>
+                            <select class="form-select" aria-label="Default select example" name="service">
+                              <option selected>Choose Service</option>
+                              <option value="Residential Cleaning">Residential Cleaning</option>
+                              <option value="Commercial Cleaning">Commercial Cleaning</option>
+                              <option value="Specialized Service">Specialized Service</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="lastName" class="form-label">Square Feet</label>
+                            <select class="form-select" aria-label="Default select example" name="size">
+                              <option selected>Choose Square Feet</option>
+                              <option value="Between 65sqm to 75sqm">Between 65sqm to 75sqm</option>
+                              <option value="Between 75sqm to 100sqm">Between 75sqm to 100sqm</option>
+                              <option value="Larger than 100sqm">Larger than 100sqm</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="lastName" class="form-label">Bedrooms</label>
+                            <select class="form-select" aria-label="Default select example" name="bedrooms">
+                              <option selected>Choose No. of Bedrooms</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5 or more">5 or more</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="lastName" class="form-label">Bathrooms</label>
+                            <select class="form-select" aria-label="Default select example" name="bathrooms">
+                              <option selected>Choose No. of Bathrooms</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5 or more">5 or more</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="lastName" class="form-label">Location</label>
+                            <select class="form-select" aria-label="Default select example" name="location">
+                              <option selected>Select Location</option>
+                              <option value="Humburg">Humburg</option>
+                              <option value="Norderstedt">Norderstedt</option>
+                              <option value="Reinbek">Reinbek</option>
+                              <option value="Wentorf">Wentorf</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="lastName" class="form-label">Schedule</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" value="Recurring" type="radio" name="schedule" id="schedule1">
+                            <label class="form-check-label" for="schedule1">
+                              Recurring
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" value="One-Time Cleaning" type="radio" name="schedule" id="schedule2">
+                            <label class="form-check-label" for="schedule2">
+                              One-Time Cleaning
+                            </label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phone">
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="email">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="smsAndEmailAuthorization">
+                            <label class="form-check-label" for="smsAndEmailAuthorization">
+                              BY CHECKING THE BOX, YOU AGREE TO OUR TERMS OF USE & PRIVACY POLICY.
+                              YOU CONSENT TO RECEIVE PHONE CALLS & SMS MESSAGES FROM US TO PROVIDE UPDATES &/OR FOR MARKETING PURPOSES.
+                            </label>
+                          </div>
+                          <input name="lang" id="lang" hidden/>
+                          <!-- <button type="submit" class="btn btn-primary">GET QUOTE</button> -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">GET QUOTE</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        `;
+        } else {  
+    
+      // *This section is in German language
+      // *
+      // *
+      // ======================================================== -->
+    
+      document.querySelector('#language').innerHTML =`
+        <!-- ======= Header ======= -->
+      <header id="header" class="d-flex align-items-center sticky-top">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="#hero" class="logo"><img width="150" height="200" src="assets/img/logo.png" alt="logo image"></a>-->
+          <h1 class="logo ml-0"><a href="#hero">Dm Gebäudereinigung<span>.</span></a></h1>
+     
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto " href="./index.html#hero">Heim</a></li>
+              <li><a class="nav-link scrollto" href="./index.html#about">Über uns</a></li>
+              <!-- <li><a class="nav-link scrollto" href="./index.html#services">Services</a></li> -->
+              <li class="dropdown"><a class="nav-link scrollto active" href="#services"><span>Dienstleistungen</span> <i class="bi bi-chevron-down" onclick="toggleDropDown()"></i></a>
+                <ul id="dropdown_items">
+                  <li><a href="./residential-cleaning.html">Wohnungsreinigung</a></li>
+                  <li><a href="./commercial-cleaning.html">Gewerbliche Reinigung</a></li>
+                  <li><a href="./specialized-services.html">Spezialisierte Dienstleistungen</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="./index.html#contact">Kontaktiere uns</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle" id="nav-toggle"  onclick="toggleMobileNav()"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header>
+      <!-- End Header -->
+      <main id="main" data-aos="fade-up">
+
+<!-- ======= Breadcrumbs ======= -->
+<section class="breadcrumbs">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Gewerbliche Reinigung</h2>
+      <ol>
+        <li><a href="./index.html">Heim</a></li>
+        <li>Dienstleistungen</li>
+        <li>Gewerbliche Reinigung</li>
+      </ol>
+    </div>
+
+  </div>
+</section><!-- End Breadcrumbs -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <div class="row">
+      <div class="col-md-8">
+        <h1><span>Gewerbliche Reinigung</span></h1>
+        <h2>Wenn Sauberkeit zählt, zählen Sie auf uns.</h2>
+        <div class="d-flex">
+          <a href="#" class="btn-get-started scrollto" data-bs-toggle="modal" data-bs-target="#quoteModel">Erhalten Sie ein kostenloses Angebot</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div href="#hero"><img class="hero-logo" src="assets/img/logo.png" alt="logo image"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+<section class="inner-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="display-4 text-primary">SPEZIALREINIGUNG FÜR STARK FREQUENTIERTE BEREICHE.</h2>
+        <h3>SORGEN SIE FÜR EINE POLIERTE UND PROFESSIONELLE MEETING-UMGEBUNG.</h3>
+        <p>Erheben Sie Ihren Arbeitsbereich! Unser Expertenteam ist auf die Pflege stark frequentierter Bereiche spezialisiert und garantiert eine makellose und hygienische Umgebung für Ihr Team und Ihre Kunden.</p>
+        <p>Wir verstehen, dass stark frequentierte Bereiche besondere Aufmerksamkeit erfordern. Unser Team ist darauf vorbereitet, stark frequentierte Zonen zu bewältigen und eine saubere und hygienische Umgebung für Ihre Mitarbeiter und Kunden zu gewährleisten.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="./assets/img/showcase/showcaseimage1.jpg" alt="Reinigungsbild" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Häufig gestellte Fragen Abschnitt ======= -->
+<section id="faq" class="faq section-bg">
+  <div class="container">
+    <table class="table table-striped table-big table-responsive text-center rounded-3 overflow-hidden">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">EMPFANGSBEREICH / ARBEITSPLATZ UND SCHREIBTISCHE</th>
+          <th scope="col">TOILETTEN</th>
+          <th scope="col">FLURE, GEMEINSCHAFTSRÄUME, AUFZÜGE UND TREPPENHÄUSER</th>
+          <th scope="col">AUSSENBEREICHE (falls vorhanden)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-success">
+          <td>
+            <ul style="list-style: none;">
+              <li>Rezeptionsschreibtisch reinigen und desinfizieren.</li>
+              <li>Abwischen und Desinfizieren von Oberflächen.</li>
+              <li>Absaugen und Reinigen der Sitzbereiche.</li>
+              <li>Teppiche saugen oder reinigen.</li>
+              <li>Sorgen Sie für einen einladenden und ordentlichen Eingang.</li>
+              <li>Mülleimer leeren.</li>
+              <li>Arbeitsbereiche organisieren und entrümpeln.</li>
+              <li>Konferenztische reinigen und desinfizieren.</li>
+              <li>Sorgen Sie für eine polierte und professionelle Meeting-Umgebung.</li>
+            </ul>
+          </td>
+          <td>
+            <ul style="list-style: none;">
+              <li>Waschbecken und Arbeitsplatten reinigen und desinfizieren.</li>
+              <li>Toilettenbecken, Sitze und Griffe desinfizieren und reinigen.</li>
+              <li>Seifenspender und Papierhandtuchspender nachfüllen.</li>
+              <li>Spiegel und Glasflächen reinigen.</li>
+              <li>Sorgen Sie für eine frische und hygienische WC-Umgebung.</li>
+            </ul>
+          </td>
+          <td>
+            <ul style="list-style: none;">
+              <li>Oberflächen abstauben und abwischen.</li>
+              <li>Teppichböden absaugen oder reinigen.</li>
+              <li>Fenster und Glastüren reinigen.</li>
+              <li>Sichtbaren Schmutz oder Ablagerungen entfernen.</li>
+              <li>Sorgen Sie für einen sauberen und organisierten Fluss in Gemeinschaftsbereichen.</li>
+              <li>Aufzugsknöpfe und Handläufe abwischen.</li>
+              <li>Aufzugskabinen reinigen und polieren.</li>
+              <li>Treppenstufen absaugen oder reinigen.</li>
+              <li>Sorgen Sie für eine sichere und saubere Transitumgebung.</li>
+            </ul>
+          </td>
+          <td>
+            <ul style="list-style: none;">
+              <li>Eingangsbereiche fegen und reinigen.</li>
+              <li>Ablagerungen aus Außenbereichen entfernen.</li>
+              <li>Außensitzgelegenheiten reinigen und organisieren, falls vorhanden.</li>
+              <li>Sorgen Sie für ein sauberes und einladendes äußeres Erscheinungsbild.</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+</main><!-- End #main -->
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+    
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>Dm Gebäudereinigung<span>.</span></h3>
+                <p>
+                  Germany <br>
+                  Hanhover<br>
+                  Kassel <br><br>
+                  <strong>Phone:</strong> <a href="tel:+1 5589 55488 55">+1 5589 55488 55</a><br>
+                  <strong>Email:</strong>dmgebaudereinigung1@gmail.com<br>
+                </p>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a class="navlink scrollto" href="#hero">Heim</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a class="navlink scrollto" href="#about">Über uns</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a class="navlink scrollto" href="#services">Dienstleistungen</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a class="navlink scrollto" href="#">Nutzungsbedingungen</a></li>
+                  <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Unsere Dienstleistungen</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Wohnungsreinigung</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Gewerbliche Reinigung</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Spezialisierte Dienstleistungen</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Unsere sozialen Netzwerke</h4>
+                <p>Kontaktieren Sie uns gerne unter Unsere sozialen Netzwerke</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container py-4">
+          <div class="copyright">
+            &copy; Urheberrechte <strong><span>Dm Gebäudereinigung</span></strong>. Alle Rechte vorbehalten
+          </div>
+          <div class="credits">
+            Entworfen von <a href="https://bootstrapmade.com/">Dev Kim</a>
+          </div>
+        </div>
+      </footer><!-- End Footer -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="quoteModel" tabindex="-1" aria-labelledby="quoteModelLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="quoteModelLabel">Kostenlosen Kostenvoranschlag erhalten</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+</div>
+<div class="modal-body">
+  <form action="forms/quote.php" method="post" role="form" class="php-email-form">
+    <div class="mb-3">
+      <label for="firstName" class="form-label">Vorname</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="firstName">
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Nachname</label>
+      <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="lastName">
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Dienstleistungen</label>
+      <select class="form-select" aria-label="Default select example" name="service">
+        <option selected>Dienstleistung auswählen</option>
+        <option value="Wohnungsreinigung">Wohnungsreinigung</option>
+        <option value="Gewerbereinigung">Gewerbereinigung</option>
+        <option value="Spezialdienstleistung">Spezialdienstleistung</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Quadratmeter</label>
+      <select class="form-select" aria-label="Default select example" name="size">
+        <option selected>Quadratmeter auswählen</option>
+        <option value="Zwischen 65 qm und 75 qm">Zwischen 65 qm und 75 qm</option>
+        <option value="Zwischen 75 qm und 100 qm">Zwischen 75 qm und 100 qm</option>
+        <option value="Größer als 100 qm">Größer als 100 qm</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Schlafzimmer</label>
+      <select class="form-select" aria-label="Default select example" name="bedrooms">
+        <option selected>Anzahl der Schlafzimmer auswählen</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5 oder mehr">5 oder mehr</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Badezimmer</label>
+      <select class="form-select" aria-label="Default select example" name="bathrooms">
+        <option selected>Anzahl der Badezimmer auswählen</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5 oder mehr">5 oder mehr</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Ort</label>
+      <select class="form-select" aria-label="Default select example" name="location">
+        <option selected>Ort auswählen</option>
+        <option value="Hamburg">Hamburg</option>
+        <option value="Norderstedt">Norderstedt</option>
+        <option value="Reinbek">Reinbek</option>
+        <option value="Wentorf">Wentorf</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Zeitplan</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" value="Wiederkehrend" type="radio" name="schedule" id="schedule1">
+      <label class="form-check-label" for="schedule1">
+        Wiederkehrend
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" value="Einmalige Reinigung" type="radio" name="schedule" id="schedule2">
+      <label class="form-check-label" for="schedule2">
+        Einmalige Reinigung
+      </label>
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Telefon</label>
+      <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phone">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-Mail-Adresse</label>
+      <input type="email" class="form-control" id="email" name="email" aria-describedby="email">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Nachricht</label>
+      <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="smsAndEmailAuthorization">
+      <label class="form-check-label" for="smsAndEmailAuthorization">
+        DURCH ANKREUZEN DES KÄSTCHENS ERKLÄREN SIE SICH MIT UNSEREN NUTZUNGSBEDINGUNGEN UND DATENSCHUTZRICHTLINIEN EINVERSTANDEN.
+        SIE ERLAUBEN UNS, SIE TELEFONISCH UND PER SMS ZU KONTAKTIEREN, UM AKTUALISIERUNGEN ZU GEBEN UND/ODER FÜR MARKETINGZWECKE.
+      </label>
+    </div>
+    <input name="lang" id="lang" hidden/>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+      <button type="submit" class="btn btn-primary">KOSTENVORANSCHLAG ERHALTEN</button>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+    `;
+          }
+        }
+      </script>
+    </body>
+    </html>

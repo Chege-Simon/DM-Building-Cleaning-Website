@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+    </head>
+    <body>
+        <div style="margin: 5%">
+            <img style="height: 20vh; margin-left: 40%;" src="../assets/img/logo.png"  alt="image logo"/>
+            <div style="background-color: lightgray; border-radius: 25px; padding: 5%">
+                <h1 style="font-weight: bolder;">
+                    Client Name: {FIRSTNAME} {LASTNAME}
+                </h1>
+                <h1 style="font-weight: bolder;">
+                    Client Email: {EMAIL}
+                </h1>
+                <h1 style="font-weight: bolder;">
+                    Client Phone: {PHONE}
+                </h1>
+                <h2 style="font-weight: bolder;">The client above is sending a request for the price quotation for the following:</h2>
+                <table style="border: 1px solid #000; border-radius: 25px; margin: 1%; width: 50%;">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th style="border: 1px solid; padding: 2%; border-top-left-radius: 25px; font-size: 1.5rem;">Service</th>
+                            <td style="border: 1px solid; padding: 2%; border-top-right-radius: 25px; font-size: 1.5rem;">{SERVICE}</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid; padding: 2%; font-size: 1.5rem;">Size (in Square Feet)</th>
+                            <td style="border: 1px solid; padding: 2%; font-size: 1.5rem;">{SIZE}</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid; padding: 2%; font-size: 1.5rem;">Bedrooms</th>
+                            <td style="border: 1px solid; padding: 2%; font-size: 1.5rem;">{BEDROOMS}</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid; padding: 2%; font-size: 1.5rem;">Bathrooms</th>
+                            <td style="border: 1px solid; padding: 2%; font-size: 1.5rem;">{BATHROOMS}</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid; padding: 2%; font-size: 1.5rem;">Location</th>
+                            <td style="border: 1px solid; padding: 2%; font-size: 1.5rem;">{LOCATION}</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid; padding: 2%; font-size: 1.5rem;">Schedule</th>
+                            <td style="border: 1px solid; padding: 2%; font-size: 1.5rem;">{SCHEDULE}</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid; padding: 2%; border-bottom-left-radius: 25px; font-size: 1.5rem;">Message</th>
+                            <td style="border: 1px solid; padding: 2%; border-bottom-right-radius: 25px; font-size: 1.5rem;">{MESSAGE}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="font-style: italic; text-align: center; text-decoration: underline;">
+                Please click on the reply button to reply to the client.
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
