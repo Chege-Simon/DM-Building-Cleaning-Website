@@ -78,7 +78,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex flex-wrap gap-2 align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:dmgebaudereinigung1@gmail.com">dmgebaudereinigung1@gmail.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center"><a href="tel:+1 5589 55488 55">+1 5589 55488 55</a></i>
+        <i class="bi bi-phone d-flex align-items-center"><a href="tel:+49 1708 990200">+49 1708 990200</a></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -135,8 +135,14 @@
   // *
   // ======================================================== -->
     
-    document.querySelector('#languageSelector').value = 'en';
     
+    var usrlang = navigator.language || navigator.userLanguage; 
+    console.log("User's preferred language is: " + usrlang);
+    if(usrlang.includes('en')){
+      document.querySelector('#languageSelector').value = 'en';
+    }else{
+      document.querySelector('#languageSelector').value = 'gm';
+    }
     
     window.onload = changeLanguage;
     function changeLanguage(){
@@ -646,7 +652,7 @@
                   <div class="info-box  mb-4">
                     <i class="bx bx-phone-call"></i>
                     <h3>Call Us</h3>
-                    <a href="tel:+1 5589 55488 55">+1 5589 55488 55</a>
+                    <a href="tel:+49 1708 990200">+49 1708 990200</a>
                   </div>
                 </div>
       
@@ -705,7 +711,7 @@
                     Germany <br>
                     Hanhover<br>
                     Kassel <br><br>
-                    <strong>Phone:</strong> <a href="tel:+1 5589 55488 55">+1 5589 55488 55</a><br>
+                    <strong>Phone:</strong> <a href="tel:+49 1708 990200">+49 1708 990200</a><br>
                     <strong>Email:</strong>dmgebaudereinigung1@gmail.com<br>
                   </p>
                 </div>
@@ -1370,7 +1376,7 @@
                 <div class="info-box  mb-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Rufen Sie uns an</h3>
-                  <a href="tel:+1 5589 55488 55">+1 5589 55488 55</a>
+                  <a href="tel:+49 1708 990200">+49 1708 990200</a>
                 </div>
               </div>
 
@@ -1429,7 +1435,7 @@
                   Germany <br>
                   Hanhover<br>
                   Kassel <br><br>
-                  <strong>Phone:</strong> <a href="tel:+1 5589 55488 55">+1 5589 55488 55</a><br>
+                  <strong>Phone:</strong> <a href="tel:+49 1708 990200">+49 1708 990200</a><br>
                   <strong>Email:</strong>dmgebaudereinigung1@gmail.com<br>
                 </p>
               </div>
@@ -1598,9 +1604,12 @@
       }
       
       var langinput = document.querySelector('#lang');
-      console.log(lang);
+      // console.log(lang);
       langinput.value = lang;
     }
   </script>
+  <script> 
+  </script>
+
 </body>
 </html>
