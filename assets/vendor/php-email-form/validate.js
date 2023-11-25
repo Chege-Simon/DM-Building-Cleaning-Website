@@ -1,6 +1,6 @@
 /**
 * PHP Email Form Validation - v3.6
-* URL: https://bootstrapmade.com/php-email-form/
+* URL: https://chege-simon.github.io/php-email-form/
 * Author: BootstrapMade.com
 */
 (function () {

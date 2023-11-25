@@ -169,7 +169,7 @@
 			&copy; Urheberrechte <strong><span>Dm Gebäudereinigung</span></strong>. Alle Rechte vorbehalten
 		</div>
 		<div class="credits">
-			Entworfen von <a href="https://bootstrapmade.com/">Dev Kim</a>
+			Entworfen von <a href="https://chege-simon.github.io/">Dev Kim</a>
 		</div>
 		</div>
 	</footer><!-- End Footer -->
