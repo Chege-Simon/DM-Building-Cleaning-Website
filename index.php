@@ -165,8 +165,10 @@
       document.querySelector('#languageSelector').value = 'gm';
     }
     
-    window.onload = changeLanguage;
-    function changeLanguage(){
+    // window.onload = changeLanguage;
+    window.changeLanguage = function() {
+
+    // function changeLanguage(){
 
       /**
        * Initiate Pure Counter 
@@ -1564,6 +1566,10 @@
       });
 
     }
+     // Call the function on page load to set the initial language
+  window.onload = function() {
+    window.changeLanguage();
+  };
   </script>
   <!-- <script> 
  window.onload = loadPureCounter;
