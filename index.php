@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,40 +33,46 @@
   ======================================================== -->
 </head>
 <style>
-  .featured-services .icon-box .showcasebackground1{
+  .featured-services .icon-box .showcasebackground1 {
     background-image: url("assets/img/showcase/showcaseimage1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
-  .featured-services .icon-box .showcasebackground2{
+
+  .featured-services .icon-box .showcasebackground2 {
     background-image: url("assets/img/showcase/showcaseimage2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
-  .featured-services .icon-box .showcasebackground3{
+
+  .featured-services .icon-box .showcasebackground3 {
     background-image: url("assets/img/showcase/showcaseimage3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
-  .featured-services .icon-box .showcasebackground4{
+
+  .featured-services .icon-box .showcasebackground4 {
     background-image: url("assets/img/showcase/showcaseimage4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
-  .hero-logo{
+
+  .hero-logo {
     width: 100%;
   }
+
   @media only screen and (max-width: 1200px) {
-  #topbar {
-    padding-top: 50px;
-    padding-bottom: 15px;
+    #topbar {
+      padding-top: 50px;
+      padding-bottom: 15px;
+    }
   }
-}
 </style>
+
 <body>
   <div style="position:fixed; top: 0px; right: 20px; z-index:996">
     <select id="languageSelector" class="form-select" aria-label="Default select language" onchange="window.changeLanguage()">
@@ -80,7 +85,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex flex-wrap gap-2 align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:dmgebaudereinigung1@gmail.com">dmgebaudereinigung1@gmail.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center"><a href="tel:+49 1708 990200">+49 1708 990200</a></i>
+        <i class="bi bi-phone d-flex align-items-center"><a href="tel:+49 174 9734088">+49 174 9734088</a></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -91,22 +96,29 @@
     </div>
   </section>
   <?php
-								//check if the database file exists and create a new if not
-          if(!is_file('./db/dmbuildingcleaning.sqlite3')){
-            file_put_contents('./db/dmbuildingcleaning.sqlite3', null);
-          }
-            //Create a new SQLite3 Database
-            $db = new SQLite3('./db/dmbuildingcleaning.sqlite3');
+  // Load SQLite3 manually if possible
+  if (!extension_loaded('sqlite3')) {
+    dl('sqlite3.so');
+  }
+  if (!extension_loaded('pdo_sqlite')) {
+    dl('pdo_sqlite.so');
+  }
+  //check if the database file exists and create a new if not
+  if (!is_file('./db/dmbuildingcleaning.sqlite3')) {
+    file_put_contents('./db/dmbuildingcleaning.sqlite3', null);
+  }
+  //Create a new SQLite3 Database
+  $db = new SQLite3('./db/dmbuildingcleaning.sqlite3');
 
-            //Create a new table to our database 
-            $query = "CREATE TABLE IF NOT EXISTS reviews (review_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, firstname STRING, lastname STRING, location STRING, review_message STRING)";
-            $db->exec($query);
+  //Create a new table to our database 
+  $query = "CREATE TABLE IF NOT EXISTS reviews (review_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, firstname STRING, lastname STRING, location STRING, review_message STRING)";
+  $db->exec($query);
 
-							//query from the table that we create
-							$sql = "SELECT review_id, * FROM reviews";
-							$query = $db->query($sql);
+  //query from the table that we create
+  $sql = "SELECT review_id, * FROM reviews";
+  $query = $db->query($sql);
 
-						?>
+  ?>
   <div id="language">
 
   </div>
@@ -131,7 +143,6 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-    
     // window.onload = changeLanguage;
     // document.querySelector('#languageSelector').value = 'en';
     // document.querySelector('.german').style.display = 'none';
@@ -149,26 +160,26 @@
     //   }
     // }
 
-    
 
-  // *This section is in English language
-  // *
-  // *
-  // ======================================================== -->
-    
-    
-    var usrlang = navigator.language || navigator.userLanguage; 
+
+    // *This section is in English language
+    // *
+    // *
+    // ======================================================== -->
+
+
+    var usrlang = navigator.language || navigator.userLanguage;
     console.log("User's preferred language is: " + usrlang);
-    if(usrlang.includes('en')){
+    if (usrlang.includes('en')) {
       document.querySelector('#languageSelector').value = 'en';
-    }else{
+    } else {
       document.querySelector('#languageSelector').value = 'gm';
     }
-    
+
     // window.onload = changeLanguage;
     window.changeLanguage = function() {
 
-    // function changeLanguage(){
+      // function changeLanguage(){
 
       /**
        * Initiate Pure Counter 
@@ -180,7 +191,7 @@
       // console.log(lang);
       // Hide elements that don't correspond to the user's preferred language
       if (lang == 'en') {
-        document.querySelector('#language').innerHTML=`
+        document.querySelector('#language').innerHTML = `
     
         <!-- ======= Header ======= -->
         <header id="header" class="d-flex align-items-center sticky-top">
@@ -464,8 +475,8 @@
             </div>
           </section><!-- End Services Section -->
 
-          <?php 
-          
+          <?php
+
           ?>
           <!-- ======= Testimonials Section ======= -->
           <section id="testimonials" class="testimonials">
@@ -475,30 +486,30 @@
                 
                 <div class="swiper-wrapper">
       
-                <?php 
-                    while($row = $query->fetchArray()){
-                      
-                      $imagesDir = 'assets/img/testimonials/';
+                <?php
+                while ($row = $query->fetchArray()) {
 
-                      $images = glob($imagesDir . '*.{png}', GLOB_BRACE);
-                      
-                      $randomImage = $images[array_rand($images)]; 
-                      echo '
+                  $imagesDir = 'assets/img/testimonials/';
+
+                  $images = glob($imagesDir . '*.{png}', GLOB_BRACE);
+
+                  $randomImage = $images[array_rand($images)];
+                  echo '
                       <div class="swiper-slide">
                         <div class="testimonial-item">
-                        <img src="'.$randomImage.'" class="testimonial-img" alt="testimonial image">
-                        <h3>'.$row['firstname'].' '.$row['lastname'].'</h3>
-                        <h4>'.$row['location'].'</h4>
+                        <img src="' . $randomImage . '" class="testimonial-img" alt="testimonial image">
+                        <h3>' . $row['firstname'] . ' ' . $row['lastname'] . '</h3>
+                        <h4>' . $row['location'] . '</h4>
                         <p>
                           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                            '.$row['review_message'].'
+                            ' . $row['review_message'] . '
                           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                       </div>
                     </div>
                       ';
-                    }
-                  ?>
+                }
+                ?>
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
@@ -630,7 +641,7 @@
                   <div class="info-box  mb-4">
                     <i class="bx bx-phone-call"></i>
                     <h3>Call Us</h3>
-                    <a href="tel:+49 1708 990200">+49 1708 990200</a>
+                    <a href="tel:+49 174 9734088">+49 174 9734088</a>
                   </div>
                 </div>
       
@@ -689,7 +700,7 @@
                     Germany <br>
                     Hanhover<br>
                     Kassel <br><br>
-                    <strong>Phone:</strong> <a href="tel:+49 1708 990200">+49 1708 990200</a><br>
+                    <strong>Phone:</strong> <a href="tel:+49 174 9734088">+49 174 9734088</a><br>
                     <strong>Email:</strong>dmgebaudereinigung1@gmail.com<br>
                   </p>
                 </div>
@@ -857,15 +868,15 @@
           </div>
         </div>
           `;
-          } else {
-            
+      } else {
 
-      // *This section is in German language
-      // *
-      // *
-      // ======================================================== -->
 
-            document.querySelector('#language').innerHTML = `
+        // *This section is in German language
+        // *
+        // *
+        // ======================================================== -->
+
+        document.querySelector('#language').innerHTML = `
         <!-- ======= Header ======= -->
       <header id="header" class="d-flex align-items-center sticky-top">
         <div class="container d-flex align-items-center justify-content-between">
@@ -1156,30 +1167,30 @@
             <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
             
             <div class="swiper-wrapper">
-            <?php 
-                    while($row = $query->fetchArray()){
-                      
-                      $imagesDir = 'assets/img/testimonials/';
+            <?php
+            while ($row = $query->fetchArray()) {
 
-                      $images = glob($imagesDir . '*.{png}', GLOB_BRACE);
-                      
-                      $randomImage = $images[array_rand($images)]; 
-                      echo '
+              $imagesDir = 'assets/img/testimonials/';
+
+              $images = glob($imagesDir . '*.{png}', GLOB_BRACE);
+
+              $randomImage = $images[array_rand($images)];
+              echo '
                       <div class="swiper-slide">
                         <div class="testimonial-item">
-                        <img src="'.$randomImage.'" class="testimonial-img" alt="testimonial image">
-                        <h3>'.$row['firstname'].' '.$row['lastname'].'</h3>
-                        <h4>'.$row['location'].'</h4>
+                        <img src="' . $randomImage . '" class="testimonial-img" alt="testimonial image">
+                        <h3>' . $row['firstname'] . ' ' . $row['lastname'] . '</h3>
+                        <h4>' . $row['location'] . '</h4>
                         <p>
                           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                            '.$row['review_message'].'
+                            ' . $row['review_message'] . '
                           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                       </div>
                     </div>
                       ';
-                    }
-                  ?>
+            }
+            ?>
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -1313,7 +1324,7 @@
                 <div class="info-box  mb-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Rufen Sie uns an</h3>
-                  <a href="tel:+49 1708 990200">+49 1708 990200</a>
+                  <a href="tel:+49 174 9734088">+49 174 9734088</a>
                 </div>
               </div>
 
@@ -1372,7 +1383,7 @@
                   Germany <br>
                   Hanhover<br>
                   Kassel <br><br>
-                  <strong>Phone:</strong> <a href="tel:+49 1708 990200">+49 1708 990200</a><br>
+                  <strong>Phone:</strong> <a href="tel:+49 174 9734088">+49 174 9734088</a><br>
                   <strong>Email:</strong>dmgebaudereinigung1@gmail.com<br>
                 </p>
               </div>
@@ -1539,14 +1550,14 @@
 
         `;
       }
-      
+
       var langinput = document.querySelector('#lang');
       // console.log(lang);
       langinput.value = lang;
-      
+
       setTimeout('', 10000);
       new PureCounter();
-       
+
       /**
        * Testimonials slider
        */
@@ -1566,10 +1577,10 @@
       });
 
     }
-     // Call the function on page load to set the initial language
-  window.onload = function() {
-    window.changeLanguage();
-  };
+    // Call the function on page load to set the initial language
+    window.onload = function() {
+      window.changeLanguage();
+    };
   </script>
   <!-- <script> 
  window.onload = loadPureCounter;
@@ -1580,4 +1591,5 @@
   </script> -->
 
 </body>
+
 </html>
