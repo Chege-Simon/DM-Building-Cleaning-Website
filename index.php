@@ -70,7 +70,7 @@
 </style>
 <body>
   <div style="position:fixed; top: 0px; right: 20px; z-index:996">
-    <select id="languageSelector" class="form-select" aria-label="Default select language" onchange="changeLanguage()">
+    <select id="languageSelector" class="form-select" aria-label="Default select language" onchange="window.changeLanguage()">
       <option value="en" selected>🇬🇧 English</option>
       <option value="gm">🇩🇪 German</option>
     </select>
