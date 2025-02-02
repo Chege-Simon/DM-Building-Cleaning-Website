@@ -208,9 +208,9 @@
                 <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
                 <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>services</span> <i class="bi bi-chevron-down" onclick="toggleDropDown()"></i></a>
                   <ul id="dropdown_items">
-                    <li><a href="./residential-cleaning.html">Residential Cleaning</a></li>
-                    <li><a href="./commercial-cleaning.html">Commercial Cleaning</a></li>
-                    <li><a href="./specialized-services.html">Specialized Services</a></li>
+                    <li><a href="/residential-cleaning.html">Residential Cleaning</a></li>
+                    <li><a href="/commercial-cleaning.html">Commercial Cleaning</a></li>
+                    <li><a href="/specialized-services.html">Specialized Services</a></li>
                   </ul>
                 </li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -440,7 +440,7 @@
               </div>
       
               <div class="row">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" href="./residential-cleaning.html">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" href="/residential-cleaning.html">
                   <div class="icon-box">
                     <div class="icon">
                       <i class="bi bi-1-circle-fill"></i>
@@ -450,7 +450,7 @@
                   </div>
                 </div>
       
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" href="./commercial-cleaning.html">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" href="/commercial-cleaning.html">
                   <div class="icon-box">
                     <div class="icon">
                       <i class="bi bi-2-circle-fill"></i>
@@ -719,9 +719,9 @@
                 <div class="col-lg-3 col-md-6 footer-links">
                   <h4>Our Services</h4>
                   <ul>
-                    <li><i class="bx bx-chevron-right"></i> <a href="./residential-cleaning.html">Residential Cleaning</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="./commercial-cleaning.html">Commercial Cleaning</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="./specialized-services.html">Specialized Services</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="/residential-cleaning.html">Residential Cleaning</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="/commercial-cleaning.html">Commercial Cleaning</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="/specialized-services.html">Specialized Services</a></li>
                   </ul>
                 </div>
       
@@ -892,9 +892,9 @@
               <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
               <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Dienstleistungen</span> <i class="bi bi-chevron-down" onclick="toggleDropDown()"></i></a>
                 <ul id="dropdown_items">
-                  <li><a href="./residential-cleaning.html">Wohnungsreinigung</a></li>
-                  <li><a href="./commercial-cleaning.html">Gewerbliche Reinigung</a></li>
-                  <li><a href="./specialized-services.html">Spezialisierte Dienstleistungen</a></li>
+                  <li><a href="/residential-cleaning.html">Wohnungsreinigung</a></li>
+                  <li><a href="/commercial-cleaning.html">Gewerbliche Reinigung</a></li>
+                  <li><a href="/specialized-services.html">Spezialisierte Dienstleistungen</a></li>
                 </ul>
               </li>
               <li><a class="nav-link scrollto" href="#contact">Kontaktiere uns</a></li>
