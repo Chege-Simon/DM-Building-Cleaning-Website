@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33cad13092641f81b77ea1ff6e1ca5db",
+    "content-hash": "5c690f77c9fb951969a6f3035c14e691",
     "packages": [
         {
             "name": "phpmailer/phpmailer",
@@ -86,6 +86,52 @@
                 }
             ],
             "time": "2024-11-24T18:04:13+00:00"
+        },
+        {
+            "name": "ufee/sqlite3",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ufee/Sqlite3.git",
+                "reference": "513f9dee69b8bd1edc7907eba4c1aa97a41fe5c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ufee/Sqlite3/zipball/513f9dee69b8bd1edc7907eba4c1aa97a41fe5c3",
+                "reference": "513f9dee69b8bd1edc7907eba4c1aa97a41fe5c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ufee\\Sqlite3\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vlad Ionov",
+                    "email": "vlad@ufee.ru",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Sqlite3 PHP Class (https://www.sqlite.org/)",
+            "homepage": "https://github.com/ufee",
+            "support": {
+                "email": "vlad@ufee.ru",
+                "issues": "https://github.com/ufee",
+                "source": "https://github.com/ufee/Sqlite3/tree/1.0.2"
+            },
+            "time": "2023-07-18T10:27:46+00:00"
         }
     ],
     "packages-dev": [],
@@ -94,7 +140,10 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-sqlite3": "*",
+        "ext-pdo_sqlite": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
