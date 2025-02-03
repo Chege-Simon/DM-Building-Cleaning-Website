@@ -622,9 +622,9 @@
                     <i class="bx bx-map"></i>
                     <h3>Our Address</h3>
                     <p>
-                      Germany <br>
-                      Hanhover<br>
-                      Kassel <br>
+                    92339 <br>
+                    Beilngries<br>
+                    Germany<br>
                     </p>
                   </div>
                 </div>
@@ -1380,9 +1380,9 @@
               <div class="col-lg-3 col-md-6 footer-contact">
                 <h3>Dm Gebäudereinigung<span>.</span></h3>
                 <p>
-                  Germany <br>
-                  Hanhover<br>
-                  Kassel <br><br>
+                  92339<br>
+                  Beilngries<br>
+                  Germany<br><br>
                   <strong>Phone:</strong> <a href="tel:+49 174 9734088">+49 174 9734088</a><br>
                   <strong>Email:</strong>dmgebaudereinigung1@gmail.com<br>
                 </p>
