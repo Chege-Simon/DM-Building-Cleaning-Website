@@ -1,1 +1,1 @@
-Website for DM Gebäudereinigung //dm-building cleaning
+Website for DM Gebäudereinigung
