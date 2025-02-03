@@ -445,7 +445,7 @@
                     <div class="icon">
                       <i class="bi bi-1-circle-fill"></i>
                     </div>
-                    <h4><a href="">Residential Cleaning:</a></h4>
+                    <h4><a  href="/residential-cleaning.html">Residential Cleaning:</a></h4>
                     <p>From regular maintenance to deep cleaning, we keep your home spotless and comfortable.</p>
                   </div>
                 </div>
@@ -455,7 +455,7 @@
                     <div class="icon">
                       <i class="bi bi-2-circle-fill"></i>
                     </div>
-                    <h4><a href="">Commercial Cleaning: </a></h4>
+                    <h4><a href="/commercial-cleaning.html">Commercial Cleaning: </a></h4>
                     <p>We create a clean and inviting workspace that promotes productivity and professionalism.</p>
                   </div>
                 </div>
@@ -465,7 +465,7 @@
                     <div class="icon">
                       <i class="bi bi-3-circle-fill"></i>
                     </div>
-                    <h4><a href="">Specialized Services:</a></h4>              
+                    <h4><a href="specialized-services.html">Specialized Services:</a></h4>              
                     <p>Whether it's carpet cleaning, window cleaning, or any other specific cleaning need, we have you covered.</p>
                   </div>
                 </div>
@@ -697,9 +697,9 @@
                 <div class="col-lg-3 col-md-6 footer-contact">
                   <h3>Dm Gebäudereinigung<span>.</span></h3>
                   <p>
-                    Germany <br>
-                    Hanhover<br>
-                    Kassel <br><br>
+                    92339 <br>
+                    Beilngries<br>
+                    Germany<br><br>
                     <strong>Phone:</strong> <a href="tel:+49 174 9734088">+49 174 9734088</a><br>
                     <strong>Email:</strong>dmgebaudereinigung1@gmail.com<br>
                   </p>
@@ -1125,32 +1125,32 @@
             </div>
 
             <div class="row">
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" href="/residential-cleaning.html">
                 <div class="icon-box">
                   <div class="icon">
                     <i class="bi bi-1-circle-fill"></i>
                   </div>
-                  <h4><a href="">Wohnungsreinigung: </a></h4>
+                  <h4><a href="/residential-cleaning.html">Wohnungsreinigung: </a></h4>
                   <p>Von der regelmäßigen Wartung bis zur gründlichen Reinigung sorgen wir dafür, dass Ihr Zuhause makellos und komfortabel bleibt.</p>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" href="/commercial-cleaning.html">
                 <div class="icon-box">
                   <div class="icon">
                     <i class="bi bi-2-circle-fill"></i>
                   </div>
-                  <h4><a href="">Gewerbliche Reinigung: </a></h4>
+                  <h4><a href="/commercial-cleaning.html">Gewerbliche Reinigung: </a></h4>
                   <p>Wir schaffen einen sauberen und einladenden Arbeitsplatz, der Produktivität und Professionalität fördert.</p>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300" href="/specialized-services.html">
                 <div class="icon-box">
                   <div class="icon">
                     <i class="bi bi-3-circle-fill"></i>
                   </div>
-                  <h4><a href="">Spezialisierte Dienstleistungen:</a></h4>              
+                  <h4><a href="/specialized-services.html">Spezialisierte Dienstleistungen:</a></h4>              
                   <p>Ob Teppichreinigung, Fensterreinigung oder ein anderer spezifischer Reinigungsbedarf, wir sind für Sie da.</p>
                 </div>
               </div>
@@ -1305,9 +1305,9 @@
                   <i class="bx bx-map"></i>
                   <h3>Unsere Adresse</h3>
                   <p>
-                    Germany <br>
-                    Hanhover<br>
-                    Kassel <br>
+                    92339 <br>
+                    Beilngries<br>
+                    Germany<br>
                   </p>
                 </div>
               </div>
